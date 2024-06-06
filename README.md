@@ -2,9 +2,9 @@
 
 Docker dan Kubernetes adalah dua teknologi yang sangat populer dalam dunia pengembangan dan pengelolaan aplikasi berbasis container. Mereka sering digunakan bersama-sama, tetapi masing-masing memiliki fungsi dan tujuan yang berbeda. Berikut adalah penjelasan tentang Docker dan Kubernetes:
 
-# Pengenalan Docker
+## Pengenalan Docker
 
-## Apa itu Docker?
+### Apa itu Docker?
 Docker adalah platform open-source yang memungkinkan pengembang untuk membangun, mengemas, dan menjalankan aplikasi di dalam container. Container adalah unit komputasi yang ringan dan portabel yang mencakup aplikasi dan semua dependensinya sehingga aplikasi bisa berjalan dengan konsisten di berbagai lingkungan.
 
 ## Mengapa Docker?
