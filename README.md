@@ -61,6 +61,7 @@ RUN pip3 install -r requirements.txt
 
 # Tentukan perintah yang akan dijalankan ketika container dimulai
 CMD ["python3", "app.py"]
+```
 
 ## Kubernetes
 
