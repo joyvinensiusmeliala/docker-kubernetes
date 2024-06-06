@@ -63,7 +63,7 @@ RUN pip3 install -r requirements.txt
 CMD ["python3", "app.py"]
 ```
 
-## Kubernetes
+## Pengenalan Kubernetes
 
 Kubernetes adalah platform open-source untuk otomatisasi penyebaran, penskalaan, dan pengelolaan aplikasi container. Kubernetes sering disebut sebagai "K8s" dan merupakan standar de facto untuk orkestrasi container.
 
