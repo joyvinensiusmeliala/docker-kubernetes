@@ -13,7 +13,7 @@ Perbarui daftar paket sistem agar Anda memiliki versi terbaru dari paket yang te
 sudo apt-get update
 ```
 
-## Langkah 2: Instal Prasyarat
+## Langkah 2: Install Prasyarat
 
 Instal paket yang diperlukan untuk memungkinkan APT menggunakan repositori melalui HTTPS.
 
@@ -45,7 +45,7 @@ Perbarui daftar paket lagi untuk menyertakan repositori Docker yang baru ditamba
 sudo apt-get update
 ```
 
-## Langkah 6: Instal Docker
+## Langkah 6: Install Docker
 
 Instal Docker CE (Community Edition) menggunakan perintah berikut.
 
