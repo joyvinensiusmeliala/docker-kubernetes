@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  nagiosxi:
+    image: joyvinensius/nagiosxi:latest
+    container_name: nagiosxi
+    ports:
+      - "8082:80"  # Port mapping host ke container (8080 host ke 80 container)
+    volumes:
+      - nagiosxi_config:/usr/local/nagiosxi/etc  # Volume untuk konfigurasi Nagios XI
+      - nagiosxi_var:/var/lib/mysql  # Volume untuk data runtime Nagios XI
+    environment:
+      - TZ=Asia/Jakarta  # Ganti dengan zona waktu yang sesuai
+    restart: always
+
+volumes:
+  nagiosxi_config:
+  nagiosxi_var:

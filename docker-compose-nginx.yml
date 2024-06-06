@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nginx_container1:
+    image: nginx:latest
+    container_name: nginx_container1
+    ports:
+      - "8080:80"  # Port mapping, menjembatani port 8080 host ke port 80 container
+    restart: always  # Restart otomatis saat kontainer berhenti
+
+  nginx_container2:
+    image: nginx:latest
+    container_name: nginx_container2
+    ports:
+      - "8081:80"  # Port mapping, menjembatani port 8081 host ke port 80 container
+    restart: always  # Restart otomatis saat kontainer berhenti
