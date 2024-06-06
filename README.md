@@ -61,3 +61,38 @@ RUN pip3 install -r requirements.txt
 
 # Tentukan perintah yang akan dijalankan ketika container dimulai
 CMD ["python3", "app.py"]
+
+## Kubernetes
+
+Kubernetes adalah platform open-source untuk otomatisasi penyebaran, penskalaan, dan pengelolaan aplikasi container. Kubernetes sering disebut sebagai "K8s" dan merupakan standar de facto untuk orkestrasi container.
+
+### Fitur Utama Kubernetes:
+
+- **Pods**: Unit terkecil dalam Kubernetes yang dapat berisi satu atau lebih container.
+- **Services**: Abstraksi untuk mendefinisikan cara mengakses set pod tertentu.
+- **Replication Controllers**: Memastikan jumlah pod yang tepat berjalan.
+- **Deployments**: Manajemen deklaratif untuk menyebarkan aplikasi.
+- **Namespaces**: Isolasi logis untuk sumber daya dalam kluster.
+- **Persistent Storage**: Integrasi dengan berbagai penyedia penyimpanan untuk data persisten.
+- **ConfigMaps dan Secrets**: Manajemen konfigurasi dan informasi sensitif.
+
+### Manfaat Kubernetes:
+
+- **Skalabilitas**: Otomatis menyesuaikan skala aplikasi berdasarkan beban.
+- **Manajemen Rollout/Rollback**: Mengelola rilis aplikasi dan mundur jika terjadi kesalahan.
+- **Pemulihan Mandiri**: Secara otomatis me-restart, memindahkan, atau menggantikan container yang gagal.
+- **Orkestrasi Lintas Host**: Mengelola deployment aplikasi di beberapa host sebagai satu entitas.
+
+## Cara Kerja Bersama
+
+Docker dan Kubernetes sering digunakan bersama untuk memberikan solusi lengkap dalam manajemen container:
+
+- Docker digunakan untuk membuat dan mengemas aplikasi ke dalam container.
+- Kubernetes digunakan untuk mengatur container tersebut dalam skala besar, mengelola lifecycle, dan menyediakan fitur-fitur seperti load balancing, pemulihan diri, dan penskalaan otomatis.
+
+## Contoh Kasus Penggunaan
+
+- **Pengembangan dan Pengujian**: Docker memungkinkan pengembang untuk menjalankan lingkungan pengembangan yang konsisten di mana saja.
+- **Produksi dan Orkestrasi**: Kubernetes mengelola container Docker di lingkungan produksi, menangani skala dan pemulihan otomatis.
+
+Dengan memahami peran masing-masing teknologi ini, organisasi dapat merancang dan menjalankan aplikasi yang lebih fleksibel, skala, dan tahan lama.
