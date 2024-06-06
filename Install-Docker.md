@@ -112,3 +112,20 @@ Jika Anda mengalami masalah selama instalasi, berikut beberapa langkah pemecahan
 ```sh
 sudo systemctl status docker
 ```
+
+- Lihat Log Docker: Jika layanan Docker tidak berjalan, periksa log untuk informasi lebih lanjut.
+
+```sh
+sudo journalctl -u docker
+```
+
+- Reinstall Docker: Jika masalah tetap ada, Anda mungkin perlu menghapus dan menginstal ulang Docker.
+
+
+```sh
+sudo apt-get remove docker-ce
+sudo apt-get purge docker-ce
+sudo apt-get autoremove
+sudo rm -rf /var/lib/docker
+sudo rm -rf /etc/docker
+```
