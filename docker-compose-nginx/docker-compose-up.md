@@ -59,5 +59,3 @@ Buka browser web dan akses Nginx menggunakan IP publik atau hostname dari server
 ```bash
 http://<your_server_ip>:8080
 ```
-
-  
