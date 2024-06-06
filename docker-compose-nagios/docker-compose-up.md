@@ -39,13 +39,13 @@ sudo docker-compose -f docker-compose-nagios.yml up -d
 1. Memeriksa status kontainer:
 
 ```bash
-sudo docker-compose -f docker-nagios-compose.yml ps
+sudo docker-compose -f docker-compose-nagios.yml ps
 ```
 
 2. Melihat log dari kontainer:
 
 ```bash
-sudo docker-compose -f docker-nagios-compose.yml logs   
+sudo docker-compose -f docker-compose-nagios.yml logs   
 ```
 
 3. Mengakses Nagios XI:
