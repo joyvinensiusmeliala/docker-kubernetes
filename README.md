@@ -1,3 +1,7 @@
+# Docker dan Kubernetes: Pengantar Singkat
+
+Docker dan Kubernetes adalah dua teknologi yang sangat populer dalam dunia pengembangan dan pengelolaan aplikasi berbasis container. Mereka sering digunakan bersama-sama, tetapi masing-masing memiliki fungsi dan tujuan yang berbeda. Berikut adalah penjelasan tentang Docker dan Kubernetes:
+
 # Pengenalan Docker
 
 ## Apa itu Docker?
