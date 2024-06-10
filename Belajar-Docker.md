@@ -9,6 +9,7 @@
 ```sh
 docker images
 ```
+![Deskripsi Gambar](images/docker-images.png)
 
 2. Docker pull
 
