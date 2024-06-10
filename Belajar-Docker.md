@@ -2,16 +2,7 @@
 
 ## Create and Pull Docker Images
 
-1. Docker images
-
--  Menampilkan daftar image yang ada di sistem lokal.
-
-```sh
-docker images
-```
-![Deskripsi Gambar](images/docker-images.png)
-
-2. Docker pull
+1. Docker pull
 
 -  Mengunduh image dari Docker Hub atau registry lain.
 
@@ -20,6 +11,16 @@ docker pull IMAGE
 ```
 
 ![Deskripsi Gambar](images/docker-nginx-1-alpine-slim.png)
+
+2. Docker images
+
+-  Menampilkan daftar image yang ada di sistem lokal.
+
+```sh
+docker images
+```
+
+![Deskripsi Gambar](images/docker-images.png)
 
 5. Docker build
 
