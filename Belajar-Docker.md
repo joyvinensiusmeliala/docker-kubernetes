@@ -92,87 +92,29 @@ docker container start nginxjoy01 nginxjoy02
 docker images rm IMAGE
 ```
 
-10. Docker exec
+## Membuat Docker Images menggunakan Dockerfile
 
--   Menjalankan perintah di dalam container yang sedang berjalan.
+10. Docker build
+
+-   Membuat Docker Images menggunakan Dockerfile
+-   note : sebelum running file di atas anda terlebih dahulu harus membuat Dockerfile
 
 ```sh
-docker exec [options] CONTAINER COMMAND [ARG...]
+docker build --tag app-golang:1.0 .
 ```
 
-11. Docker logs
+11. Docker container create
 
--   Melihat log dari container.
+-  Membuat container dari images Nginx di latar belakang pada port 8080 yang sudah ada di server 
 
 ```sh
-docker logs CONTAINER
+docker container create --name app1 -p 8085:8080 app-golang1.0
 ```
 
-12. Docker network
-
--   Mengelola jaringan Docker.
+12. Running container yang sudah di buat 
 
 ```sh
-docker network [COMMAND]
-```
-
-13. Docker volume
-
--   Mengelola volume Docker.
-
-```sh
-docker volume [COMMAND]
-```
-
-14. Docker-compose
-
--   Menggunakan Docker Compose untuk menjalankan aplikasi multi-container.
-
-```sh
-docker-compose up
-docker-compose down
-```
-
-## Contoh Penggunaan
-
-1. Menjalankan Container
-
--  Menjalankan container Nginx di latar belakang pada port 80.
-
-```sh
-docker run -d -p 80:80 nginx
-```
-
-2. Membangun Image
-
--  Membangun image dari Dockerfile di direktori saat ini.
-
-```sh
-docker build -t myapp .
-```
-
-3. Melihat Log Container
-
--  Melihat log dari container dengan nama atau ID tertentu.
-
-```sh
-docker logs mycontainer
-```
-
-4. Menggunakan Docker Compose
-
--  Menjalankan semua layanan yang ditentukan dalam docker-compose.yml.
-
-```sh
-docker-compose up
-```
-
-5. Masuk ke Shell dalam Container
-
--  Menjalankan bash di dalam container yang sedang berjalan.
-
-```sh
-docker exec -it mycontainer bash
+docker container start app1 
 ```
 
 Itu adalah beberapa perintah dasar yang dapat digunakan untuk bekerja dengan Docker. Tentu saja, Docker memiliki banyak perintah lain yang lebih spesifik untuk kebutuhan yang lebih lanjut. Anda dapat memeriksa dokumentasi Docker untuk informasi lebih lengkap dan mendetail.
