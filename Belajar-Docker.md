@@ -117,4 +117,12 @@ docker container create --name app1 -p 8085:8080 app-golang1.0
 docker container start app1 
 ```
 
+## Update Docker Images ke Docker Registry
+
+-  Anda harus terlebih dahulu membuat Docker Repository di DockerHub
+
+![Deskripsi Gambar](images/docker-app-golang.png)
+
+![Deskripsi Gambar](images/docker-app-golang2.png)
+
 Itu adalah beberapa perintah dasar yang dapat digunakan untuk bekerja dengan Docker. Tentu saja, Docker memiliki banyak perintah lain yang lebih spesifik untuk kebutuhan yang lebih lanjut. Anda dapat memeriksa dokumentasi Docker untuk informasi lebih lengkap dan mendetail.
