@@ -70,7 +70,7 @@ docker container stop nginxjoy01
 
 7. Docker container create
 
--  Membuat container dari images yang sudah ada di server
+-  Membuat container dari images Nginx di latar belakang pada port 80 yang sudah ada di server 
 
 ```sh
 docker container create --name nginxjoy01 -p 8083:80 nginx:1-alpine-slim
@@ -82,44 +82,14 @@ docker container create --name nginxjoy01 -p 8083:80 nginx:1-alpine-slim
 docker container start nginxjoy01 nginxjoy02
 ```
 
-5. Docker build
-
--  Membangun image dari Dockerfile.
-
-```sh
-docker build [options] PATH | URL | -
-```
-
-6. Docker stop
-
--  Menghentikan container yang sedang berjalan. 
-
-```sh
-docker stop CONTAINER
-```
-
-7. Docker start
-
--  Menjalankan container yang telah dihentikan.
-
-```sh
-docker start CONTAINER
-```
-
-8. Docker rm
-
--  Menghapus container yang telah berhenti.
-
-```sh
-docker rm CONTAINER
-```
+## Menghapus images 
 
 9. Docker rmi
 
 -  Menghapus image dari sistem lokal.
 
 ```sh
-docker rmi IMAGE
+docker images rm IMAGE
 ```
 
 10. Docker exec
