@@ -44,6 +44,27 @@ docker container ls --all
 docker container create --name nginxjoy01 nginx:1-alpine-slim
 ```
 
+5. Docker container run
+
+-  Menjalankan container dari images yang sudah ada di server
+
+```sh
+docker container start nginxjoy01
+```
+
+6. Docker container rm dan stop
+
+-  Menghapus container yang sudah ada di server
+
+```sh
+docker container rm nginxjoy01
+```
+
+note : sebelum menghapus container, anda harus memastikan container yang ingin di hapus harus dalam keadaan berhenti 
+
+```sh
+docker container stop nginxjoy01
+```
 
 5. Docker build
 
