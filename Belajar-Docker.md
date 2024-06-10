@@ -18,6 +18,8 @@ docker images
 docker pull IMAGE
 ```
 
+![Deskripsi Gambar](images/docker-nginx-1-alpine-slim.png)
+
 5. Docker build
 
 -  Membangun image dari Dockerfile.
