@@ -22,6 +22,29 @@ docker images
 
 ![Deskripsi Gambar](images/docker-images.png)
 
+3. Docker images
+
+-  Menampilkan daftar container yang sedang running di sistem lokal.
+
+```sh
+docker container ls
+```
+
+-  Menampilkan daftar container yang sedang running dan tidak running di sistem lokal.
+
+```sh
+docker container ls --all
+```
+
+4. Docker container create
+
+-  Membuat container dari images yang sudah ada di server
+
+```sh
+docker container create --name nginxjoy01 nginx:1-alpine-slim
+```
+
+
 5. Docker build
 
 -  Membangun image dari Dockerfile.
