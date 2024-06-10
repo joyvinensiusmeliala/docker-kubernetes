@@ -4,6 +4,7 @@
 
 - Ubuntu 18.04 atau versi lebih baru.
 - Akses sudo atau akses root.
+- visit link -> https://docs.docker.com/engine/install/ubuntu/
 
 ## Langkah 1: Update Sistem
 
