@@ -125,4 +125,19 @@ docker container start app1
 
 ![Deskripsi Gambar](images/docker-app-golang2.png)
 
+```sh
+docker push joyvinensius/app-golang:1.0
+```
+
+![Deskripsi Gambar](images/dockerpush.png)
+
+keterangan Error seperti gambar di atas, di akibatkan oleh tidak ada images pada server local dengan nama tag joyvinensius/app-golang:1.0.
+anda harus membuat images baru sesuai tag yang ada pada repository DockerHub yang anda miliki 
+
+```sh
+docker tag app-golang:1.0 joyvinensius/app-golang:1.0
+docker login
+docker push joyvinensius/app-golang:1.0
+``` 
+
 Itu adalah beberapa perintah dasar yang dapat digunakan untuk bekerja dengan Docker. Tentu saja, Docker memiliki banyak perintah lain yang lebih spesifik untuk kebutuhan yang lebih lanjut. Anda dapat memeriksa dokumentasi Docker untuk informasi lebih lengkap dan mendetail.
