@@ -130,13 +130,3 @@ sudo apt-get autoremove
 sudo rm -rf /var/lib/docker
 sudo rm -rf /etc/docker
 ```
-
-## Perintah Dasar Docker
-
-1. Docker run
-
--  Menjalankan container baru dari sebuah image.
-
-```sh
-docker run [options] IMAGE [command] [arguments]
-```
