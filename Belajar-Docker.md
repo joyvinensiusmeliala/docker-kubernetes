@@ -66,6 +66,22 @@ note : sebelum menghapus container, anda harus memastikan container yang ingin d
 docker container stop nginxjoy01
 ```
 
+## Membuka Port untuk Container
+
+7. Docker container create
+
+-  Membuat container dari images yang sudah ada di server
+
+```sh
+docker container create --name nginxjoy01 -p 8083:80 nginx:1-alpine-slim
+```
+
+8. Running container yang sudah di buat 
+
+```sh
+docker container start nginxjoy01 nginxjoy02
+```
+
 5. Docker build
 
 -  Membangun image dari Dockerfile.
