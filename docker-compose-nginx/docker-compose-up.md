@@ -5,7 +5,7 @@ Berikut adalah langkah-langkah untuk menjalankan Nagios XI dalam container Docke
 Note.
 Langkah 1: sebelum menjalankan Docker Compose anda perlu install Docker Compose terlebih dahulu 
 
-## Langkah 1: Unduh Versi Terbaru Docker Compose
+## Unduh Versi Terbaru Docker Compose
 
 -  Untuk Linux:
 
@@ -15,7 +15,23 @@ Langkah 1: sebelum menjalankan Docker Compose anda perlu install Docker Compose 
    sudo curl -L "https://github.com/docker/compose/releases/download/v2.17.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
     ```
 
-## Langkah 1: Menyiapkan Docker Compose
+## Berikan Izin Eksekusi pada Biner
+
+-  Setelah mengunduh Docker Compose, Anda perlu memberikan izin eksekusi pada file biner yang telah diunduh.
+
+   ```bash
+   docker-compose --version
+   ```
+
+## Verifikasi Instalasi
+
+-  Untuk memastikan bahwa Docker Compose telah terinstal dengan benar, jalankan perintah berikut untuk memeriksa versinya:
+
+   ```bash
+   sudo chmod +x /usr/local/bin/docker-compose
+    ```
+
+## Menyiapkan Docker Compose
 
 1. Buat file `docker-compose-nginx.yml`:
 
