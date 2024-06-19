@@ -1,5 +1,5 @@
 # Gunakan image resmi Nginx sebagai base image
-FROM nginx:1-alphine=slim
+FROM nginx:1-alpine-slim
 
 # Salin konfigurasi Nginx ke dalam image
 COPY nginx.conf /etc/nginx/nginx.conf
