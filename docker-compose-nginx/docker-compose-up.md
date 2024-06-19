@@ -23,6 +23,8 @@ Langkah 1: sebelum menjalankan Docker Compose anda perlu install Docker Compose 
    docker-compose --version
    ```
 
+
+
 ## Verifikasi Instalasi
 
 -  Untuk memastikan bahwa Docker Compose telah terinstal dengan benar, jalankan perintah berikut untuk memeriksa versinya:
